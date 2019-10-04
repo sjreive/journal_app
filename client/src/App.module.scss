@@ -1,0 +1,36 @@
+@import "./styles/mixins.module.scss";
+
+* {
+  border-style: dashed;
+}
+.App {
+  text-align: center;
+}
+
+.mainBody {
+  @include flexThis(space-between, flex-start, row);
+  height: 500px;
+}
+
+.wheelContainer {
+  width: 75%;
+  background-color: pink;
+  height: 500px;
+}
+
+.descriptionContainer {
+  width: 25%;
+  background-color: green;
+  height: 500px;
+}
+
+.entryFormContainer {
+  width: 100%;
+  background-color: blue;
+  height: 500px;
+}
+
+// @keyframes App-logo-spin {
+//   from { transform: rotate(0deg); }
+//   to { transform: rotate(360deg); }
+// }
