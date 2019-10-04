@@ -1,8 +1,41 @@
-.Wheel {
-  height: 400px;
+.Container {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.wheel_LevelOne {
+  height: 250px;
   position: relative;
-  width: 400px;
+  top: -925px;
+  width: 250px;
   background-color: gray;
   border-radius: 100%;
   margin: 0 auto;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.wheel_LevelTwo {
+  top: -575px;
+  height: 450px;
+  position: relative;
+  width: 450px;
+  background-color: pink;
+  border-radius: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.wheel_LevelThree {
+  height: 700px;
+  position: relative;
+  width: 700px;
+  background-color: blue;
+  border-radius: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden;
 }

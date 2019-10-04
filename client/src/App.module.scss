@@ -1,27 +1,29 @@
 @import "./styles/mixins.module.scss";
 
-* {
-  border-style: dashed;
-}
 .App {
   text-align: center;
 }
 
 .mainBody {
   @include flexThis(space-between, flex-start, row);
-  height: 500px;
+  height: 700px;
+}
+
+.navContainer {
+  width: 10%;
+  background-color: pink;
+  height: 700px;
 }
 
 .wheelContainer {
-  width: 75%;
-  background-color: pink;
-  height: 500px;
+  width: 70%;
+  height: 700px;
 }
 
 .descriptionContainer {
-  width: 25%;
+  width: 20%;
   background-color: green;
-  height: 500px;
+  height: 700px;
 }
 
 .entryFormContainer {
