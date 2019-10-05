@@ -10,12 +10,15 @@
 }
 
 .navContainer {
-  width: 10%;
+  width: 20%;
   background-color: pink;
   height: 700px;
 }
 
 .formContainer {
-  width: 70%;
-  height: 700px;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  @include flexThis(center, center, column);
+  background-color: plum;
 }

@@ -1,41 +1,44 @@
-.Container {
-  position: absolute;
-  z-index: 0;
-  height: 100%;
-  margin: 0 auto;
+@import "../../styles/mixins.module.scss";
+
+.newEntryForm {
+  width: 80%;
+  text-align: center;
+  background-color: lightcoral;
+  border-radius: 1rem;
+  padding: 0.5rem;
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  p {
+    margin-top: 3rem;
+  }
 }
 
-.wheel_LevelOne {
-  height: 250px;
-  position: relative;
-  top: -925px;
-  width: 250px;
-  background-color: gray;
-  border-radius: 100%;
+.feelingList {
+  height: 12rem;
+  width: 45%;
   margin: 0 auto;
-  z-index: 2;
-  overflow: hidden;
+  @include flexThis(space-between, center, row);
+  flex-wrap: wrap;
 }
 
-.wheel_LevelTwo {
-  top: -575px;
-  height: 450px;
-  position: relative;
-  width: 450px;
-  background-color: pink;
-  border-radius: 100%;
-  margin: 0 auto;
-  z-index: 2;
-  overflow: hidden;
-}
+.feelingTile {
+  margin-top: 0.75rem;
+  height: 5rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 5rem;
 
-.wheel_LevelThree {
-  height: 700px;
-  position: relative;
-  width: 700px;
-  background-color: blue;
-  border-radius: 100%;
-  margin: 0 auto;
-  z-index: 1;
-  overflow: hidden;
+  &__icon {
+    margin-top: 1rem;
+    color: gold;
+    size: 32px;
+  }
+
+  p {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+  }
 }

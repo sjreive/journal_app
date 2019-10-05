@@ -15,10 +15,9 @@ function App() {
       </div>
       <div className={classes.mainBody}>
         <div className={classes.navContainer}></div>
-        <div className={classes.formContainer}></div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className={classes.formContainer}>
+          <EntryForm feelings={feelings} />
+        </div>
       </div>
     </div>
   );
