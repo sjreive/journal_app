@@ -4,7 +4,7 @@ import classes from "./wheel_segments.module.scss";
 export default function wheelSegments(props) {
   // return <div className={classes.wheel_segment}></div>;
   return (
-    <span>
+    <>
       <svg
         className={classes.segment}
         width={250}
@@ -37,6 +37,6 @@ export default function wheelSegments(props) {
           d="M 0.8090169943749475 0.5877852522924731 A 1 1 0 0 1 0.30901699437494745 0.9510565162951535"
         />
       </svg>
-    </span>
+    </div>
   );
 }
