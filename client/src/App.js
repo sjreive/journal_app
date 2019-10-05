@@ -4,7 +4,8 @@ import classes from "./App.module.scss";
 
 import { feelings } from "./data/feelings";
 
-import Wheel from "./components/wheel/wheel";
+import EntryForm from "./components/EntryForm/Form";
+import Entries from "./components/Entry/EntryList";
 
 function App() {
   return (
@@ -14,16 +15,11 @@ function App() {
       </div>
       <div className={classes.mainBody}>
         <div className={classes.navContainer}></div>
-        <div className={classes.wheelContainer}>
-          <Wheel feelings={feelings} />
-        </div>
-
-        <div className={classes.descriptionContainer}></div>
+        <div className={classes.formContainer}></div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
       </div>
-      <div className={classes.entryFormContainer}></div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
     </div>
   );
 }
