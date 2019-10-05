@@ -3,6 +3,7 @@ import { FaSmileBeam } from "react-icons/fa";
 import classes from "../Form.module.scss";
 
 export default function FeelingListItem(props) {
+  console.log("feelings list", props.feelings);
   return (
     <div
       className={classes.feelingTile}
