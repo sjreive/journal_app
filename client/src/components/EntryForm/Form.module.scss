@@ -2,8 +2,9 @@
 
 .newEntryForm {
   width: 80%;
+  max-width: 600px;
   text-align: center;
-  background-color: lightcoral;
+  background-color: #d8d8d6;
   border-radius: 1rem;
   padding: 0.5rem;
 
@@ -16,16 +17,26 @@
   }
 }
 
+.primaryFeeling {
+  margin-top: 0.2rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 7.5rem;
+  @include flexThis(space-between, center, row);
+}
+
 .feelingList {
   height: 12rem;
-  width: 45%;
+  width: 60%;
   margin: 0 auto;
-  @include flexThis(space-between, center, row);
+  @include flexThis(space-evenly, center, row);
   flex-wrap: wrap;
 }
 
 .feelingTile {
-  margin-top: 0.75rem;
+  margin: 0.75rem;
+
   height: 5rem;
   background-color: white;
   border-radius: 1rem;
@@ -34,7 +45,6 @@
   &__icon {
     margin-top: 1rem;
     color: gold;
-    size: 32px;
   }
 
   p {
@@ -47,23 +57,29 @@
   height: 5rem;
   width: 70%;
   margin: 0 auto;
-  @include flexThis(space-between, center, row);
+  @include flexThis(space-evenly, center, row);
+  flex-wrap: wrap;
 }
 
 .feelingTag {
   margin-top: 0.2rem;
-  height: 3rem;
+  height: 1.3rem;
   background-color: white;
   border-radius: 1rem;
-  width: 7rem;
+  width: 7.5rem;
+  @include flexThis(space-between, center, row);
 
   &__icon {
-    margin-top: 1rem;
-    color: gold;
+    color: black;
+    margin-left: 0.4rem;
+
+    &_emoticon {
+      color: gold;
+      margin-right: 0.4rem;
+    }
   }
 
-  p {
-    margin-top: 0.2rem;
-    font-size: 0.5rem;
+  &__text {
+    font-size: 0.5 rem;
   }
 }

@@ -3,6 +3,7 @@ import classes from "../Form.module.scss";
 import FeelingsTagItem from "./FeelingsTagItem";
 
 export default function FeelingsTagList(props) {
+  console.log("props feelings", props.feelings);
   const feelingsList =
     props.feelings &&
     Object.keys(props.feelings).map(feeling => {
