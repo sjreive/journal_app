@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSmileBeam } from "react-icons/fa";
+import getEmoticon from "../../../helpers/helpers";
 import classes from "../Form.module.scss";
 
 export default function FeelingListItem(props) {
@@ -8,7 +8,7 @@ export default function FeelingListItem(props) {
       className={classes.feelingTile}
       onClick={() => props.clickHandler(props.name, props.feelingObj)}
     >
-      <FaSmileBeam className={classes.feelingTile__icon} size={30} />
+      {getEmoticon(props.name, 30, classes.feelingTile__icon)}
       <p>{props.name}</p>
     </div>
   );

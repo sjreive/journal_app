@@ -5,6 +5,7 @@ import { useVisualMode } from "../../hooks/useVisualMode";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import FeelingList from "./Feelings/FeelingList";
 import FeelingsTagList from "./Feelings/FeelingsTagList";
+import getEmoticon from "../../helpers/helpers";
 
 export default function Form(props) {
   const [primaryFeeling, setPrimaryFeeling] = useState("");
@@ -66,13 +67,9 @@ export default function Form(props) {
           </div>
           <div className={classes.newEntryForm}>
             <div className={classes.primaryFeeling}>
-              {primaryFeeling}{" "}
-              <FaAngleDoubleLeft
-                className={classes.feelingTag__icon}
-                size={30}
-                onClick={() => back()}
-              />{" "}
-              , or more specifically...
+              {primaryFeeling}
+              {getEmoticon(primaryFeeling, 30, classes.feelingTag__icon)}... or
+              more specifically:
             </div>
             <FeelingList
               feelings={

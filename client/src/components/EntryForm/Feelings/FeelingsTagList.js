@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "../Form.module.scss";
 import FeelingsTagItem from "./FeelingsTagItem";
+import getEmoticon from "../../../helpers/helpers";
 
 export default function FeelingsTagList(props) {
   console.log("props feelings", props.feelings);
@@ -11,7 +12,7 @@ export default function FeelingsTagList(props) {
         <FeelingsTagItem
           key={feeling}
           name={feeling}
-          emoticon={props.feelings[feeling].emoticon}
+          emoticon={getEmoticon(feeling, 13, classes.feelingTag__emoticon)}
           clickHandler={props.clickHandler}
         />
       );

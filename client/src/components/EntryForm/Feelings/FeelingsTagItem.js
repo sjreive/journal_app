@@ -1,6 +1,7 @@
 import React from "react";
 import { FaSmileBeam, FaTimes } from "react-icons/fa";
 import classes from "../Form.module.scss";
+import getEmoticon from "../../../helpers/helpers";
 
 export default function FeelingsTagItem(props) {
   const emoticon = (
@@ -14,7 +15,7 @@ export default function FeelingsTagItem(props) {
     <div className={classes.feelingTag}>
       {emoticon}
       <h5 classNames={classes.feelingTag__text}>{props.name}</h5>
-      <FaSmileBeam className={classes.feelingTag__icon_emoticon} size={13} />
+      {props.emoticon}
     </div>
   );
 }
