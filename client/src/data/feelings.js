@@ -14,14 +14,6 @@ const feelings = {
       Irritable: {
         emoticon: " ",
         definition: " DEFN HERE"
-      },
-      Envy: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
-      Disgust: {
-        emoticon: " ",
-        definition: " DEFN HERE"
       }
     }
   },
@@ -29,23 +21,11 @@ const feelings = {
     emoticon: " ",
     definition: " DEFN HERE",
     subFeelings: {
-      Suffering: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
-      Misery: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
       Disappointed: {
         emoticon: " ",
         definition: " DEFN HERE"
       },
       Shameful: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
-      Neglected: {
         emoticon: " ",
         definition: " DEFN HERE"
       },
@@ -70,15 +50,6 @@ const feelings = {
       Amazed: {
         emoticon: " ",
         definition: " DEFN HERE"
-      },
-      Overcome: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
-
-      Moved: {
-        emoticon: " ",
-        definition: " DEFN HERE"
       }
     }
   },
@@ -86,10 +57,6 @@ const feelings = {
     emoticon: " ",
     definition: " DEFN HERE",
     subFeelings: {
-      Content: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
       Happy: {
         emoticon: " ",
         definition: " DEFN HERE"
@@ -113,10 +80,6 @@ const feelings = {
       Elation: {
         emoticon: " ",
         definition: " DEFN HERE"
-      },
-      Enthralled: {
-        emoticon: " ",
-        definition: " DEFN HERE"
       }
     }
   },
@@ -135,14 +98,6 @@ const feelings = {
       Desire: {
         emoticon: " ",
         definition: " DEFN HERE"
-      },
-      Tenderness: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
-      Peaceful: {
-        emoticon: " ",
-        definition: " DEFN HERE"
       }
     }
   },
@@ -158,15 +113,7 @@ const feelings = {
         emoticon: " ",
         definition: " DEFN HERE"
       },
-      Insecure: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
       Nervous: {
-        emoticon: " ",
-        definition: " DEFN HERE"
-      },
-      Horror: {
         emoticon: " ",
         definition: " DEFN HERE"
       }
