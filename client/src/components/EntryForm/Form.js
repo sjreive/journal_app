@@ -8,10 +8,14 @@ import FeelingsTagList from "./Feelings/FeelingsTagList";
 import getEmoticon from "../../helpers/helpers";
 
 export default function Form(props) {
+  // State Hooks
   const [primaryFeeling, setPrimaryFeeling] = useState("");
   const [entryFeelings, setEntryFeelings] = useState({});
-  const { mode, transition, back } = useVisualMode("FIRST");
+  const [textEntry, setTextEntry] = useState("");
 
+  const { mode, transition } = useVisualMode("FIRST");
+
+  // Click Handler Functions
   const feelingClickHandler = (feeling, obj) => {
     if (mode === "FIRST") {
       setPrimaryFeeling(feeling);
@@ -110,13 +114,21 @@ export default function Form(props) {
               because...
             </h2>
             <div className={classes.textInput}>
-              <input className={classes.input} type="text" />
+              <input
+                className={classes.input}
+                type="text"
+                value={textEntry}
+                placeholder="Go ahead, don't be shy!"
+                onChange={event => setTextEntry(event.target.value)}
+              />
             </div>
           </div>
           <FaAngleDoubleRight
             className={classes.feelingTag__icon}
             size={30}
-            onClick={() => transition("THIRD")}
+            onClick={() => {
+              props.entrySubmissionHandler(entryFeelings, textEntry);
+            }}
           />
         </div>
       )}
