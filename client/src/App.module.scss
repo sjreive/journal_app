@@ -20,5 +20,9 @@
   width: 80%;
   height: 100%;
   @include flexThis(center, center, column);
-  background-color: #8dddcc;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 195, 178, 1) 0%,
+    rgba(251, 251, 251, 1) 100%
+  );
 }

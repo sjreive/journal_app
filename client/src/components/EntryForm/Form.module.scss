@@ -1,15 +1,24 @@
 @import "../../styles/mixins.module.scss";
+@import "../../styles/variables.module.scss";
+
+.outerContainer {
+  @include flexThis(space-between, center, row);
+}
 
 .newEntryForm {
   width: 80%;
-  max-width: 600px;
+  width: 550px;
+  min-height: 300px;
   text-align: center;
-  background-color: #d8d8d6;
+  background-color: #e5e5e5;
+  border-style: outset;
   border-radius: 1rem;
   padding: 0.5rem;
+  margin: 1rem;
 
-  h2 {
+  h1 {
     margin-top: 2rem;
+    font-family: $header-font;
   }
 
   p {
@@ -18,19 +27,17 @@
 }
 
 .primaryFeeling {
-  margin-top: 0.2rem;
-  height: 3rem;
-  background-color: white;
-  border-radius: 1rem;
-  width: 7.5rem;
-  @include flexThis(space-between, center, row);
+  font-family: $header-font;
+  font-size: 2rem;
+  margin: 0.5rem;
+  text-align: center;
 }
 
 .feelingList {
   height: 12rem;
   width: 60%;
   margin: 0 auto;
-  @include flexThis(space-evenly, center, row);
+  @include flexThis(start, center, row);
   flex-wrap: wrap;
 }
 
@@ -67,6 +74,7 @@
   background-color: white;
   border-radius: 1rem;
   width: 7.5rem;
+  font-size: 0.6rem;
   @include flexThis(space-between, center, row);
 
   &__icon {
@@ -82,4 +90,18 @@
   &__text {
     font-size: 0.5 rem;
   }
+}
+
+.inputHeader {
+  @include flexThis(flex-start, center, row);
+  font-family: $header-font;
+  width: 80%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.input {
+  border-radius: 1rem;
+  height: 6rem;
+  width: 25rem;
 }
