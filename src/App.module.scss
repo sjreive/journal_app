@@ -22,13 +22,13 @@ body,
 }
 
 .navContainer {
-  width: 10%;
+  width: 3%;
 }
 
 .Container {
   margin-top: 10%;
   position: relative;
-  width: 90%;
+  width: 97%;
   height: 100%;
   @include flexThis(center, center, column);
 }
