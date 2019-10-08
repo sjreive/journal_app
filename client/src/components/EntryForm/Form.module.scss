@@ -60,6 +60,11 @@
   }
 }
 
+.feelingTile:hover > .feelingTile__icon {
+  animation-name: bounceUp;
+  animation-duration: 1s;
+}
+
 .feelingsTagList {
   height: 5rem;
   width: 70%;
@@ -69,6 +74,7 @@
 }
 
 .feelingTag {
+  opacity: 0.8;
   margin-top: 0.2rem;
   height: 1.3rem;
   background-color: white;
@@ -77,7 +83,7 @@
   font-size: 0.6rem;
   @include flexThis(space-between, center, row);
   h5 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $body-font;
   }
   &__icon {
     color: black;
@@ -94,6 +100,13 @@
   }
 }
 
+.feelingTag:hover {
+  opacity: 1;
+  border-style: solid;
+  border-color: gray;
+  border-width: thin;
+}
+
 .inputHeader {
   @include flexThis(flex-start, center, row);
   font-family: $header-font;
@@ -103,8 +116,58 @@
   margin-top: 5 rem;
 }
 
-.textarea {
+.input {
   border-radius: 1rem;
+  padding: 1rem;
   height: 6rem;
   width: 25rem;
+}
+
+FaAngleDoubleLeft:hover {
+  animation-name: bounceLeft;
+  animation-duration: 1s;
+}
+
+@keyframes bounceUp {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounceLeft {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  60% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
 }

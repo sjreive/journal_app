@@ -1,7 +1,6 @@
 import React from "react";
-import { FaSmileBeam, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import classes from "../Form.module.scss";
-import getEmoticon from "../../../helpers/helpers";
 
 export default function FeelingsTagItem(props) {
   const emoticon = (

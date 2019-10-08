@@ -4,7 +4,6 @@ import FeelingsTagItem from "./FeelingsTagItem";
 import getEmoticon from "../../../helpers/helpers";
 
 export default function FeelingsTagList(props) {
-  console.log("props feelings", props.feelings);
   const feelingsList =
     props.feelings &&
     Object.keys(props.feelings).map(feeling => {

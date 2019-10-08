@@ -1,19 +1,77 @@
 @import "./styles/mixins.module.scss";
 @import "./styles/variables.module.scss";
 
+html,
+body,
+#app,
+#app > .App {
+  height: 100%;
+  background: $gradient;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .mainBody {
   @include flexThis(space-between, flex-start, row);
-  height: 700px;
+}
+
+.navContainer {
+  width: 10%;
 }
 
 .Container {
+  margin-top: 10%;
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100%;
   @include flexThis(center, center, column);
-  background: $gradient;
+}
+
+.Button {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  border-style: outset;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+
+  &__icon {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+.Button:hover {
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }

@@ -5,10 +5,10 @@ import EntryListItem from "./EntryListItem";
 export default function EntryList(props) {
   const Entries =
     props.entries &&
-    props.entries.map(entry => {
-      console.log(entry);
+    props.entries.map((entry, index) => {
       return (
         <EntryListItem
+          key={index}
           text={entry.textEntry}
           feelings={entry.entryFeelings}
           date={entry.date}
