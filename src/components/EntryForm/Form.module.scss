@@ -114,6 +114,9 @@
   text-align: center;
   margin: 2rem auto;
   margin-top: 5 rem;
+  h2 {
+    margin-left: 3rem;
+  }
 }
 
 .input {
@@ -121,11 +124,6 @@
   padding: 1rem;
   height: 6rem;
   width: 25rem;
-}
-
-FaAngleDoubleLeft:hover {
-  animation-name: bounceLeft;
-  animation-duration: 1s;
 }
 
 @keyframes bounceUp {
