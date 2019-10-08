@@ -8,7 +8,7 @@
 .newEntryForm {
   width: 80%;
   width: 550px;
-  min-height: 300px;
+  height: 400px;
   text-align: center;
   background-color: #e5e5e5;
   border-style: outset;
@@ -29,7 +29,7 @@
 .primaryFeeling {
   font-family: $header-font;
   font-size: 2rem;
-  margin: 0.5rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -76,15 +76,17 @@
   width: 7.5rem;
   font-size: 0.6rem;
   @include flexThis(space-between, center, row);
-
+  h5 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   &__icon {
     color: black;
     margin-left: 0.4rem;
+  }
 
-    &_emoticon {
-      color: gold;
-      margin-right: 0.4rem;
-    }
+  &__emoticon {
+    color: gold;
+    margin-right: 0.4rem;
   }
 
   &__text {
@@ -98,9 +100,10 @@
   width: 80%;
   text-align: center;
   margin: 2rem auto;
+  margin-top: 5 rem;
 }
 
-.input {
+.textarea {
   border-radius: 1rem;
   height: 6rem;
   width: 25rem;

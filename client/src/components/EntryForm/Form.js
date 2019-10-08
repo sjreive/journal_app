@@ -114,7 +114,7 @@ export default function Form(props) {
               because...
             </h2>
             <div className={classes.textInput}>
-              <input
+              <textarea
                 className={classes.input}
                 type="text"
                 value={textEntry}

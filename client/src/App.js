@@ -15,17 +15,21 @@ function App() {
 
   // Click Handlers
   const entrySubmissionHandler = (entryFeelings, textEntry) => {
-    const date = Date.now();
+    let date = new Date();
+    date = date
+      .toString()
+      .split(" ")
+      .splice(0, 4)
+      .join(" ");
     console.log(entryFeelings, textEntry, date);
     setEntries(prev => {
-      return [...prev, { entryFeelings, textEntry }];
+      return [...prev, { entryFeelings, textEntry, date }];
     });
     transition("ENTRIES");
   };
   return (
     <div className="App">
       <div className={classes.mainBody}>
-        <div className={classes.navContainer}></div>
         {mode === "FORM" && (
           <div className={classes.Container}>
             <EntryForm

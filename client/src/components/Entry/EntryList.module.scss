@@ -21,3 +21,45 @@
     margin-top: 3rem;
   }
 }
+
+.EntryListItem {
+  width: 90%;
+  margin: auto 0;
+  background-color: white;
+  border-radius: 1rem;
+
+  &__text {
+    position: relative;
+    top: 1.5rem;
+    margin-left: 1rem;
+    @include flexThis(flex-start, center, row);
+    flex-wrap: wrap;
+    font-family: $header-font;
+    font-size: 1.2rem;
+  }
+
+  &__feelings {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  &__emoticon {
+    color: gold;
+    padding: 0.2rem;
+  }
+
+  &__date {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0 0 1rem 1rem;
+    background: $gradient-reverse;
+    font-family: $header-font;
+    p {
+      position: relative;
+      top: 1rem;
+      text-align: left;
+      margin-left: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+}

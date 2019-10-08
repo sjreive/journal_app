@@ -2,3 +2,14 @@
 
 $header-font: "Pacifico", cursive;
 $body-font: "Barlow", sans-serif;
+$gradient: linear-gradient(
+  180deg,
+  rgba(34, 195, 178, 1) 0%,
+  rgba(251, 251, 251, 1) 100%
+);
+
+$gradient-reverse: linear-gradient(
+  0deg,
+  rgba(34, 195, 178, 1) 0%,
+  rgba(251, 251, 251, 1) 100%
+);
